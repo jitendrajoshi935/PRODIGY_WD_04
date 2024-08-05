@@ -1,0 +1,48 @@
+/* mediaqueries.css */
+@media (max-width: 768px) {
+  #desktop-nav {
+      display: none;
+  }
+
+  #hamburger-nav {
+      display: flex;
+  } 
+    .menu-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: white;
+      width: 100%;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+  
+    .menu-links li {
+      text-align: center;
+      margin: 15px 0;
+    }
+  
+.menu-links.menu-active {
+      display: flex;
+  }
+
+  .menu-links a {
+      padding: 1rem;
+      color: white;
+      border-bottom: 1px solid #444;
+  }
+
+  .menu-links a:hover {
+      background-color: #444;
+  }
+
+  .hamburger-icon {
+      display: block;
+      cursor: pointer;
+  }
+
+  .icon-active {
+      color: #ff5733;
+  }
+}
